@@ -1,0 +1,23 @@
+// areacuadrado.cpp : Defines the entry point for the console application.
+//erwin
+
+// sumandos.cpp : Defines the entry point for the console application.
+//
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+//-----------------
+
+void main()
+
+{
+	float suma,a,b;
+    cin>> a;
+	cin>> b;
+	suma=a+b;
+	cout<< suma;
+	getch();
+}
