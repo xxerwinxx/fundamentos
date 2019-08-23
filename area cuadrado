@@ -1,0 +1,18 @@
+// areas.cpp : Defines the entry point for the console application.
+//erwin soliz
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std; 
+void main()
+{
+	float area,a;
+	cout<< "ingrese el lado";
+    cin>> a;
+    area=a*a;
+	cout<< "el area es " <<area;
+	getch (); 	
+}
+
