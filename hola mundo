@@ -1,0 +1,15 @@
+// HolaMundo3.cpp : Defines the entry point for the console application.
+//erwin soliz
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	cout<<"Hola Mundo"<<endl;
+	cout<<"Soy erwin soliz";
+	getch();
+}
