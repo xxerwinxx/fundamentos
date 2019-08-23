@@ -1,0 +1,22 @@
+// sumados.cpp : Defines the entry point for the console application.
+//erwin soliz
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+//---------------------------
+using namespace std;
+
+void main()
+
+{
+	float suma,a,b;
+	cout<<"primer numero";
+	cin>> a;
+	cout<<"segundo numero";
+	cin>> b;
+	cout<<"su resultado es:";
+	suma=a+b;
+	cout<< suma;	
+getch()
+}
