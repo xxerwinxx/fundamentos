@@ -1,0 +1,22 @@
+// ejercicio 8.cpp : Defines the entry point for the console application.
+//erwin soliz
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+//---------------------
+using namespace std;
+void main()
+{
+	float capital,años,interes,is;
+	cout<< "ingrese el capital: ";
+	cin>> capital;
+	cout<< "ingrese el periodo de años: ";
+	cin>> años;
+	cout<< "ingrese el interes: ";
+	cin>> interes;
+	is=capital*(interes/100)*(años/365);
+	cout<<"el interes simple es: "<< is;
+	getch();
+}
