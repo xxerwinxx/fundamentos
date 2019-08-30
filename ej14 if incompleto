@@ -1,0 +1,40 @@
+// ejercicioprac2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+//---------------------
+using namespace std;
+void main()
+{
+	float peso;
+	cout<<"ingrese el peso de la carta: ";
+    cin>>peso;
+	if (peso>0 && peso<50)
+		{
+		    cout<<"el costo es 1.50 Bs ";
+		}
+	 else (peso>50 && peso<=100);
+	    {
+			cout<<"el costo es 4 Bs ";
+	    }
+	  if (peso>100 && peso<=200)
+	    {
+		    cout<<"el costo es 6 Bs ";
+		 }
+	  else (peso>200 && peso<=350);
+	  {
+		  cout<<"el costo es 10.50 Bs ";
+      }
+	if (peso>350 && peso<=500)
+	    {
+		    cout<<"el costo es 15 Bs ";
+		 }
+	  else (peso>500);
+	  {
+		  cout<<"no se puede enviar la carta ";
+      }
+	  getch();
+}
