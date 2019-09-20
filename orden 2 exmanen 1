@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+	int n, num, sumimpares = 0, mayor, menor, aux;
+	cout << "Ingresar cantidad de numeros: ";
+	cin >> n;
+	aux = n;
+	cout << "Ingrese los numeros:\n";
+	while (n > 0) {
+		cin >> num;
+		if (n == aux) {
+			mayor = num;
+			menor = num;
+		}
+		if (num > mayor) {
+			mayor = num;
+		}
+		if (num < menor) {
+			menor = num;
+		}
+		if (num % 2 != 0) {
+			sumimpares = sumimpares + num;
+		}
+		n = n - 1;
+	}
+	cout << "Mayor: " << mayor << endl;
+	cout << "Menor: " << menor << endl;
+	cout << "Suma de pares: " << sumimpares << endl;	
+}
