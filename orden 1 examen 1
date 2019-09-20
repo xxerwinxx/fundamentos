@@ -1,0 +1,45 @@
+// orden1.cpp : Defines the entry point for the console application.
+// erwin soliz
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int e,i=1,horas,t1=0,t2=0,t3=0,t4=0,ts=0,op;
+	cout<<"----------Menu-------------"<<endl;
+	cout<<"1.manager     300bs/hora"<<endl;
+	cout<<"2.subgerente  250bs/hora"<<endl;
+	cout<<"3.soporte     150bs/hora"<<endl;
+	cout<<"4.auxiliar    90bs/hora"<<endl;
+	cout<<"ingrese la cantidad de empleados"<<endl;
+	cin>>e;
+	while (i<=e)
+	{
+		cout<<"ingrese el codigo del empleado"<<endl;
+		cin>>op;
+		switch (op)
+		{
+		    case 1: cout<<"ingrese las horas trabajadas"; cin>>horas;
+			t1=horas*300; ts=ts+t1;
+			cout<<"sueldo manager: "<<t1;
+			break;
+			case 2: cout<<"ingrese las horas trabajadas"; cin>>horas;
+			t2=horas*250; ts=ts+t2;
+			cout<<"sueldo subgerente: "<<t2;
+			break;
+			case 3: cout<<"ingrese las horas trabajadas"; cin>>horas;
+			t3=horas*150; ts=ts+t3;
+			cout<<"sueldo manager: "<<t3;
+			break;
+			case 4: cout<<"ingrese las horas trabajadas"; cin>>horas;
+			t4=horas*90; ts=ts+t4;
+			cout<<"sueldo manager: "<<t4;
+			break;
+			default : cout<<"opcion invalida";
+    }
+		i=i+1;
+  }
+	cout<<"total sueldos a pagar: " <<ts;
+	return 0;
+}
