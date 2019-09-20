@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+	float n, c, desc, i= 1;
+	cout << "Introduzca numero de clientes: ";
+	cin >> n;
+	while(i<=n)
+	{
+		cout << "Introduzca monto de la compra: ";
+		cin >> c;
+		if (c > 0 && c <= 400)
+		{
+			desc = c ;
+		}
+		if (c > 400 && c <= 900)
+		{
+			desc = c - (c * 0.04);
+		}
+		if (c > 900 && c <= 1500)
+		{
+			desc = c - (c * 0.08);
+		}
+		if (c > 1500)
+		{
+			desc = c - (c * 0.15);
+		}
+		cout << "Total con descuento: " << desc << endl;
+		i = i + 1;
+	}	
+}
