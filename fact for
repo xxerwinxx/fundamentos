@@ -1,0 +1,15 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{int n,factorial=1; 
+cout<<"Valor:";cin>>n; //5
+for(int i=1;i<=n;i++)
+{factorial=factorial*i;}  //1<5 sigue a 2<5 sigue a 3<5 sigue a 4<5 sigue 5=5 trmina(se va almacenando 1*2*3*4*5)
+cout<<factorial;
+	getch();
+	return 0;
+}
