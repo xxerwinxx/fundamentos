@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{int n,suma=0;
+cout<<"valor:";cin>>n;
+ for(int i=1;i<=n;i++)
+    {
+     suma=suma+i;
+    }
+ cout<<"suma:"<<suma;
+getch();
+return 0;
+}
