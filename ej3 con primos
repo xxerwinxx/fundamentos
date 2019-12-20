@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void primos(int num,int divisores);
+
+void main()
+{int divisor = 1, divisores = 0, num = 0;
+cout<<"Ingrese numero: ";
+cin>>num;
+do{
+if(num%divisor==0){
+divisores++;
+}
+divisor++;
+}while(divisor <= num);
+primos(num,divisores);
+getch();
+}
+// sbpgs
+void primos(int num,int divisores)
+{if(divisores == 2){
+cout<<"n-> El numero "<<num<<" es PRIMO.";
+}else{
+cout<<"n-> El numero "<<num<<" NO es PRIMO.";
+}
+}
