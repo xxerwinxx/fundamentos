@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+int main()
+{int p;
+cout<<"digite p:"; cin>>p;
+if(p<50)
+{cout<<"Costo de envio: 1.50BS";} //0-50
+else
+	{if(p<=100)  //mayor a 50 menor/igual a 100
+        {cout<<"Costo de envio: 4BS";}
+	  else
+	      {if(p<=200)  //mayor a 100
+              {cout<<"Costo de envio: 6BS";}
+		  else
+		      {if(p<=350)
+                 {cout<<"Costo de envio: 10.50BS";}
+			  else
+			      {if(p<=500)
+                     {cout<<"Costo de envio: 15BS";}
+				  else
+				     {cout<<"No puede enviarlo como carta";}
+                  }
+              }
+            }
+    }// }
+getch();
+return 0;
+}
