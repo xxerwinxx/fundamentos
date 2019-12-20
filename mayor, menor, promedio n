@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+void main()
+{int mayor=0,menor=20000,num,n;
+ float promedio,suma=0;
+ cin<<n; //cantidad
+ for(i=1;i<=n;i++)
+ {cin>>num //numero
+  if(mayor<numero)
+    mayor=numero;
+  if(menor<numero)
+    menor=numero;
+    suma=suma+numero;
+ }
+ promedio=suma/n;
+ cout<<"promedio:"<<promedio;
+ cout<<"mayor:"<<mayor;
+ cout<<"menor:"<<menor;
+system("pause");
+return 0;
+}
