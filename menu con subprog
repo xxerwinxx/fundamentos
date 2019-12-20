@@ -1,0 +1,63 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+//prototipos
+float calculoperimetro(float r);
+float calculoarea(float r);
+float calculovolumen(float r); // En la prototipo y la declaracion deben indicar los tipos de datos
+
+void main()
+{
+	float r, Area;
+	int op;
+	do {
+		cout<<endl<<"Ingresa el radio: ";
+		cin>>r;
+		// Presentar el menu
+		cout<<"======= MENU ============"<<endl;
+		cout<<"1. Calcular el perimetro "<<endl;
+		cout<<"2. Calcular el area "<<endl;
+		cout<<"3. Calcular el volumen "<<endl;
+		cout<<"4. Salir "<<endl;
+		cout<<"Ingresar opcion (1..4)"<<endl;
+		// Seleccionar la opcion
+		cin>>op;
+		switch(op) {
+		case 1: Area=calculoperimetro(r);
+				cout << Area; // En la llamada no hay tipos
+				break;
+		case 2: Area=calculoarea(r);
+				cout << Area<<endl; // En la llamada no hay tipos
+				break;
+		case 3: Area=calculovolumen(r);
+				cout << Area; // En la llamada no hay tipos
+				break;
+		case 4: cout << "Salir"<<endl; 
+				break;
+		default: cout <<"Error"<<endl;
+			    break;
+		}
+		}while (op!=4);
+	 getch();
+}
+
+float calculoperimetro(float r)
+{
+	return 2*3.141516*r; //Calculo directo y lo retorna
+}
+
+float calculoarea(float r)
+{
+	float aux;				//Declaración, calculo y retorna
+	aux=2*3.141516*r*r;
+	return aux;
+}
+
+float calculovolumen(float r)
+{
+	float V=(4/3)*3.141516*r*r*r; // Declara y retorna
+	return V;
+}
