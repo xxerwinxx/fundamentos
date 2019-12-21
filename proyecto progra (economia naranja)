@@ -1,0 +1,100 @@
+// programa que selecciona y descarta la calidad del plastico con menu
+//libreria de significados:
+//calidad1= textura mas gruesa con poca mobilidad para banners, anuncios,carteles,etc.
+//calidad2=calidad intermedia de textura y mobilidad ideal para elaborar colchas o prendas para el frio.
+//calidad3=calidad mas fina y ligera uso limitado solo para prendas de deporte o de clima calido.
+//[] 
+
+#include <iostream>
+#include "string.h" 
+using namespace std;
+
+
+void calidad(int a, int b); //prototipos
+void mayuscula(char s [] );
+
+
+int main()  //programa principal
+{
+   int opc;
+	cout<<"---------------------------------------------menu-------------------------------------------"<<endl;
+	cout<<"calidad 1= textura mas gruesa con poca mobilidad para banners, anuncios,carteles,etc."<<endl;
+	cout<<"calidad 2=calidad intermedia de textura y mobilidad ideal para elaborar colchas o prendas para el frio."<<endl;
+	cout<<"calidad 3=calidad mas fina y ligera uso limitado solo para prendas de deporte o de clima calido."<<endl;
+	cout<<"1.- Seleccione la calidad del plastico"<<endl;
+	cout<<"2.- imprimir un texto sobre una prenda"<<endl;
+	cout<<"3.- salir menu"<<endl;
+    cout<<"ingrese una opcion"<<endl;
+	cin>>opc; 
+      if(opc==1 || opc==2 || opc==3)
+	  {
+	  
+	      switch (opc) 
+           { 
+             case 1:  if(calidad==1 || calidad==2 || calidad==3) 
+         	{
+		     if (calidad=1)
+            { 
+	         cout<<"uso para publicidad"<<endl;
+	         }
+             if(calidad=2)
+             {
+	           cout<<"uso para ropa termica"<<endl;
+      	    }
+          if (calidadd=3)
+            {
+	      cout<<"uso para ropa de deporte"<<endl;
+	        }                       ; break;
+             
+	         case 2: char s[50] 
+			   cout<<"ingrese el texto"<<endl;
+			   get(s);
+			   mayuscula(s)        ;break;	 
+	         case 3: "salio menu"  ; break;
+	         default: cout<<"fin";
+           
+           } 
+   else 
+   { 
+    cout<<"opcion no valida"<<endl;
+   }      
+   return 0;  
+}
+
+void calidad(int calidad)  //simula un censor
+{
+      cout<<"tipo de calidad"<<endl;
+      cin>>calidad;<<endl;
+      if(calidad==1 || calidad==2 || calidad==3) 
+	{
+		 if (calidad=1)
+        { 
+	       cout<<"uso para publicidad"<<endl;
+	    }
+         if(calidad=2)
+        {
+	       cout<<"uso para ropa termica"<<endl;
+      	}
+          if (calidadd=3)
+        {
+	      cout<<"uso para ropa de deporte"<<endl;
+	    }
+          else
+         cout<<"calidad deficiente, devolver a reciclaje"<<endl;	 
+	}
+}
+  
+  
+  
+  
+void mayuscula(char s [] ) 
+ {
+ 	int i=0;
+ 	int k=strlen(s); s[k-1]=toupper(s[k-1]);
+ 	    while(i<strlen(s))
+ 	      {
+ 	      	if(s[i]==" ")
+ 	      	   s[i-1]=toupper(s[i-1])
+	      }
+ 	cout<<s<<endl; 	
+ } 
